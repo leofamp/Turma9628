@@ -1,0 +1,51 @@
+h1,h2{
+    color: blue;
+}
+
+#x h2{
+    color: rgb(188, 6, 115);
+}
+
+#x h2::first-letter{
+    color: blue;
+}
+div > p{
+    color: red;
+}
+
+h1 ~ p {
+    font-size: 30px;
+    color: rgb(1, 207, 73);
+}
+
+h1 + p::first-letter {
+    color: bisque;
+}
+
+button{
+    background-color: rgb(35, 38, 38);
+}
+
+button:hover{
+    background-color: rgb(85, 71, 71);
+}
+img:hover{
+    filter: grayscale(100%);
+
+}
+
+p::first-letter{
+    font-size: 50px;
+    color: red;
+}
+
+p::before{
+    content: "👌👌"
+}
+
+p::after{
+    content: "💕";
+}
+
+
+
