@@ -1,0 +1,48 @@
+h1,h2,h3 {
+    color: rgb(25, 0, 255);
+    font-size: 20%;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    margin: 10px 10px 10px 10px
+}
+body{
+     
+}
+#titulo {
+    color: red;
+    color: #213122;
+    color:rgb(14, 42, 50)
+
+}
+.paragrafo{
+    color: gray;
+    font-style: italic;
+
+}
+#paragrafo2{
+    color: black;
+
+}
+.div1{
+    color: rgb(3, 65, 159);
+
+}
+/*
+Principais Propriedades
+Font-size ---define o tamanho da fonte
+Font-family ---
+Font-weight ---determina o "peso" da fonte, usada bastante com o valor bold para colocar em negrito
+Font-style ---determina o estilo da fonte, valores como 'normal', 'oblique' ou 'italic'
+Line-height ---espaçamento entre linhas
+Text-align ---alinhamento do texto(left, right, center e justify)
+Color ---cor do texto
+Width e height ---define a largura e altura do bloco (explicar tbm como usar o auto)
+background-image:u rl(imagem-de-fundo.png) ---define a imagem de fundo
+background-color ---define a cor de fundo
+background-repeat ---
+margin-top, margin-right, margin-botton, margin-left ---define a margem para um elemento
+Padding-top, Padding-right, Padding-botton, Padding-left ---preenchimento ou espaçamento
+border-top-style ---especifica o estilo da borda
+Border-top-width ---especifica a espessura da borda
+Border-top-color ---especifica a cor da borda
+*/
