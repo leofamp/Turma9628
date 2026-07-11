@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script>
+        let jogos = []
+        jogos[0] = "minecraft"
+        jogos[1] = "minecraft storymode"
+        jogos[2] = "geometry dash"
+
+        for(i in jogos){
+            document.write(jogos[i],"<br>")
+        }
+
+        // document.write(jogos.length,"<br>")
+        // document.write(jogos[jogos.length-1],"<br>")
+        // jogos.sort()
+        // document.write(jogos,"<br>")
+        // jogos.push("Zelda")
+        // document.write(jogos,"<br>")
+        // jogos.pop()
+        // document.write(jogos,"<br>")
+
+        jogos.shift()
+        document.write(jogos,"<br>")
+        jogos.unshift("Zelda")
+        document.write(jogos,"<br>")
+        document.write(jogos[2].indexOf("m")+1,"<br>")
+        document.write(jogos.includes("Zelda"),"<br>")
+        jogos.splice(2)
+        document.write(jogos)
+    </script>
+</body>
+</html>
