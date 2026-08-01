@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Resultado: <span id="resultado"></span></h1>
+    <input type="number" id="inputLado">
+    <button onclick="calcular()">Calcular</button>
+    <br><br>
+    <button onclick="alert('Luquinhas sabe mto de JSF')">Falar uma verdade</button>
+    <script>
+
+        function areaQuadrado(lado){
+            var area = lado * lado
+            return area
+        }
+
+        function calcular(){
+            var valorLado = parseFloat(document.getElementById("inputLado").value)
+
+            var areaQd = areaQuadrado(valorLado)
+
+            document.getElementById("resultado").innerText = areaQd
+        }
+
+        
+    </script>
+</body>
+</html>
