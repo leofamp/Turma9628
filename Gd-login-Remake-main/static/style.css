@@ -1,0 +1,87 @@
+body {
+    background-image: url("../static/imagens/background.png");
+    background-size: auto;
+    background-repeat: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.verde {
+    color: greenyellow
+}
+
+.amarelo {
+    color: yellow
+}
+
+.vermelho {
+    color: darkred
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+.fantasma {
+    color: rgba(255, 255, 255, 0.777)
+}
+
+input {
+    color: white;
+    background-color: rgb(209, 140, 3);
+    font-size: 20px;
+    border: 4px solid white;
+    outline: red;
+    caret-color: white;
+}
+
+input:focus {
+    border-color: rgb(3, 255, 58);
+    box-shadow: 0 0 8px rgb(3, 255, 58, 2);
+}
+
+input::target-text {
+    color: white
+}
+
+input::selection {
+    background-color: rgb(148, 136, 9);
+    color: rgb(210, 221, 2);
+}
+
+.botao {
+    background-color: rgb(6, 191, 6);
+    color: rgb(255, 255, 0);
+    border: 6px solid yellow;
+    width: 100px;
+    height:50px;
+    transform: translateX(75px)
+}
+
+button:hover {
+    background-color: rgb(6, 147, 6);
+    color: rgb(175, 175, 0);
+    border: 6px solid rgb(175, 175, 3);
+    cursor: pointer
+}
+
+button:active {
+    background-color: rgb(6, 191, 6);
+    color: rgb(255, 255, 0);
+    border: 6px solid yellow;
+}
+
+.caixa {
+    background-color: rgb(203, 130, 4);
+    border: 3px solid rgb(44 , 36 , 1);
+    width: fit-content;
+    transform: translateX(750px)
+}
+
+img {
+    transform: translateX(600px)
+}
+
+.deu_certo {
+    display: inline-block;
+    transform: translateX(750px)
+}

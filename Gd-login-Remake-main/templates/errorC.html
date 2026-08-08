@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+
+<img src="../static/imagens/logo.png" width="600" height="75">
+
+<br>
+
+<form action="/cadastrar" method="post">
+
+<div class="caixa">
+<p class="negrito vermelho">ERRO</p>
+<p class="verde"> Escolha Seu Nome de 
+    <span class="negrito amarelo">
+        Usuário:
+    </span>
+    <br>
+    <span class="fantasma">(de 4 a 15 Caractéres)</span>
+</p>
+
+<input name="nome" required minlength="4" maxlength="15">
+
+<p class="verde"> Escolha Sua
+    <span class="negrito amarelo">
+        Senha:
+    </span>
+    <br>
+    <span class="fantasma">(de 8 a 15 Caractéres)</span>
+</p>
+
+<input type="password" name="senha" required minlength="8" maxlength="15">
+
+</form>
+
+<br><br>
+
+<button class="botao">Logar</button>
+
+</div>
+
+</body>
+</html>
