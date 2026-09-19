@@ -1,0 +1,20 @@
+p {
+    color: red;
+}
+
+#parag1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:xx-large;
+    color: black;
+
+}
+
+.paragrafo{
+    color: brown;
+    background-color: bisque;
+    width: 100px;
+    height: 100px;
+    border: 150px;
+
+}
+
