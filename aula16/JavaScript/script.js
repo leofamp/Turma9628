@@ -48,12 +48,48 @@ function gerarNumeroAleatorio(){
 }
 
 function calcular(){
-
+    totalFor.value = Number(forc.value) + Number(forMod.value)
+    totalDes.value = Number(des.value) + Number(desMod.value)
+    totalCon.value = Number(con.value) + Number(conMod.value)
+    totalInt.value = Number(int.value) + Number(intMod.value)
+    totalSab.value = Number(sab.value) + Number(sabMod.value)
+    totalCar.value = Number(car.value) + Number(carMod.value)
 }
 function camposD20(){
+    numeros_d20 = gerarNumeroAleatorio()
 
+    forD20.value = numeros_d20[0]
+    desD20.value = numeros_d20[1]
+    conD20.value = numeros_d20[2]
+    intD20.value = numeros_d20[3]
+    sabD20.value = numeros_d20[4]
+    carD20.value = numeros_d20[5]
+
+    modificador(numeros_d20)
 }
-function recarregar(){
+function modificador(numeros_aleatorios){
+    numeros_d20 = numeros_aleatorios
+    let mod = []
 
+    for (let i = 0; i< 6; i++ ){
+        valor = numeros_d20[i]
+        if (valor > 15 ){
+            mod[i] = Math.round(1+(valor / 1.2))
+        } else if (valor > 7 ){
+            mod[i] = ((valor/1.2).toFixed(0))
+        } else {
+            mod[i] = Math.round(valor/0.8)
+        }
+    }
+    forMod.value = mod[0]
+    desMod.value = mod[1]
+    conMod.value = mod[2]
+    intMod.value = mod[3]
+    sabMod.value = mod[4]
+    carMod.value = mod[5]
+}
+
+function recarregar(){
+    window.location.reload(true)
 }
 
