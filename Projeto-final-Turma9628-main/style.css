@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #111111, #292929, #111111);
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+.imagemtitulo {
+    width: 600px;
+    max-width: 90%;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    transition: 0.4s ease;
+}
+
+.imagemtitulo:hover {
+    transform: scale(1.03);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.titulo {
+    font-size: clamp(40px, 6vw, 70px);
+    margin: 30px 0 0;
+    padding: 10px 30px;
+
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #d6d6d6
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
+
+    letter-spacing: 2px;
+}
+
+.divbotao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    padding-bottom: 80px;
+}
+
+.button {
+    position: relative;
+
+    padding: 18px 55px;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #1769ff,
+        #0044c7
+    );
+
+    border: none;
+    border-radius: 16px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px rgba(0, 68, 199, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+
+    transition: 0.25s ease;
+}
+
+.button:hover {
+    transform: translateY(-5px) scale(1.05);
+
+    background: linear-gradient(
+        135deg,
+        #2878ff,
+        #0750df
+    );
+
+    box-shadow:
+        0 14px 30px rgba(0, 68, 199, 0.6),
+        0 0 25px rgba(23, 105, 255, 0.3);
+}
+
+.button:active {
+    transform: translateY(0) scale(0.97);
+}
+
+.button::after {
+    content: "→";
+
+    margin-left: 12px;
+
+    font-size: 30px;
+
+    transition: 0.2s;
+}
+
+.button:hover::after {
+    margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        min-height: 60vh;
+        padding-top: 30px;
+    }
+
+    .imagemtitulo {
+        width: 90%;
+        border-radius: 18px;
+    }
+
+    .titulo {
+        font-size: 40px;
+        padding: 5px;
+    }
+
+    .divbotao {
+        margin-top: -20px;
+    }
+
+    .button {
+        font-size: 22px;
+        padding: 16px 35px;
+    }
+}
