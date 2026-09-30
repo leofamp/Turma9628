@@ -8,32 +8,86 @@
 </head>
 <body>
     <script>
-        let jogos = []
-        jogos[0] = "minecraft"
-        jogos[1] = "minecraft storymode"
-        jogos[2] = "geometry dash"
+        let series = ["teen wolf", "tropa de elite","caçadores de trolls"]
 
-        for(i in jogos){
-            document.write(jogos[i],"<br>")
-        }
+        //document.write("<h1>"+series[0]+"</h1>")
+        //document.write("<br>")
+        //document.write(series[1])
+        //document.write("<br>")
+        //document.write(series[2])
 
-        // document.write(jogos.length,"<br>")
-        // document.write(jogos[jogos.length-1],"<br>")
-        // jogos.sort()
-        // document.write(jogos,"<br>")
-        // jogos.push("Zelda")
-        // document.write(jogos,"<br>")
-        // jogos.pop()
-        // document.write(jogos,"<br>")
+        /*document.write(series[series.length-1])
+        document.write("<br>")
+        document.write(series.length)
 
-        jogos.shift()
-        document.write(jogos,"<br>")
-        jogos.unshift("Zelda")
-        document.write(jogos,"<br>")
-        document.write(jogos[2].indexOf("m")+1,"<br>")
-        document.write(jogos.includes("Zelda"),"<br>")
-        jogos.splice(2)
-        document.write(jogos)
+        series.sort()
+        document.write("<br>")
+        document.write(series)
+
+        series.push("one piece")
+        document.write("<br>")
+        document.write(series)
+
+        series.pop()
+        document.write("<br>")
+        document.write(series)
+
+        series.shift()
+        document.write("<br>")
+        document.write(series)
+
+        series.unshift("A grande família")
+        document.write("<br>")
+        document.write(series)
+
+        document.write("<br>")
+        document.write(series.indexOf("teen wolf"))
+        document.write("<br>")
+        document.write(series.indexOf("Naruto"))
+        
+
+
+        let series2 = series
+        let series3 = series.slice()
+        document.write("lista 1: " + series)
+        document.write("<br>")
+        document.write("lista 2: " + series2)
+        document.write("<br>")
+        document.write("lista 3: " + series3)
+
+        series.push("one piece")
+
+        document.write("<br>")  
+        document.write("lista 1: " + series)
+        document.write("<br>")
+        document.write("lista 2: " + series2)
+        document.write("<br>")
+        document.write("lista 3: " + series3)
+        */
+
+        let jogoDaVelha = [
+            ["X","O","X"],
+            ["O","O","X"],
+            ["X","X","O"]
+        ]
+        document.write(jogoDaVelha[0])
+        document.write("<br>")
+        document.write(jogoDaVelha[1])
+        document.write("<br>")
+        document.write(jogoDaVelha[2])
+        
+        document.write("<br>")
+        document.write(jogoDaVelha[0][0])
+
+        jogoDaVelha[1][1] = "Leo"
+        document.write("<br>")
+        document.write(jogoDaVelha[0])
+        document.write("<br>")
+        document.write(jogoDaVelha[1])
+        document.write("<br>")
+        document.write(jogoDaVelha[2])
+
+        
     </script>
 </body>
 </html>

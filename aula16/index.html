@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora RPG</title>
+
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Calculadora RPG</h1>
+      <p>Ficha de personagem</p>
+      <table>
+        <tr>
+          <th>Atributo</th>
+          <th>Valor</th>
+          <th>D20</th>
+          <th>MOD</th>
+          <th>Total</th>
+        </tr>
+        <tr>
+          <th>FOR</th>
+          <td><input type="text" id="forBase" name="forBaseName" class="forClass" /></td>
+          <td><input type="text" id="forD20" disabled /></td>
+          <td><input type="text" id="forMod" disabled /></td>
+          <td><input type="text" id="forTotal" disabled /></td>
+        </tr>
+        
+        <tr>
+          <th>DES</th>
+          <td><input type="text" id="desBase" /></td>
+          <td><input type="text" id="desD20" disabled /></td>
+          <td><input type="text" id="desMod" disabled /></td>
+          <td><input type="text" id="desTotal" disabled /></td>
+        </tr>
+
+        <tr>
+          <th>CON</th>
+          <td><input type="text" id="conBase" /></td>
+          <td><input type="text" id="conD20" disabled /></td>
+          <td><input type="text" id="conMod" disabled /></td>
+          <td><input type="text" id="conTotal" disabled /></td>
+        </tr>
+
+        <tr>
+          <th>INT</th>
+          <td><input type="text" id="intBase" /></td>
+          <td><input type="text" id="intD20" disabled /></td>
+          <td><input type="text" id="intMod" disabled /></td>
+          <td><input type="text" id="intTotal" disabled /></td>
+        </tr>
+
+        <tr>
+          <th>SAB</th>
+          <td><input type="text" id="sabBase" /></td>
+          <td><input type="text" id="sabD20" disabled /></td>
+          <td><input type="text" id="sabMod" disabled /></td>
+          <td><input type="text" id="sabTotal" disabled /></td>
+        </tr>
+
+        <tr>
+          <th>CAR</th>
+          <td><input type="text" id="carBase" /></td>
+          <td><input type="text" id="carD20" disabled /></td>
+          <td><input type="text" id="carMod" disabled /></td>
+          <td><input type="text" id="carTotal" disabled /></td>
+        </tr>
+      </table>
+      <div class="botoes">
+        <button id="calcular">Calcular</button>
+        <button id="dado">Rodar dado</button>
+        <button id="resetar">Resetar</button>
+      </div>
+    </main>
+    <script src="JavaScript/script.js"></script>
+  </body>
+</html>

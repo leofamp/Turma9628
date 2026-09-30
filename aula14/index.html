@@ -5,28 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <button onclick="soma(4,5)">Calcular</button>
+    <button onmouseout="">Barney</button>
+    <button onclick="dividir(10,5)">67</button>
+
     <h1>Resultado: <span id="resultado"></span></h1>
-    <input type="number" id="inputLado">
-    <button onclick="calcular()">Calcular</button>
-    <br><br>
-    <button onclick="alert('Luquinhas sabe mto de JSF')">Falar uma verdade</button>
+
     <script>
-
-        function areaQuadrado(lado){
-            var area = lado * lado
-            return area
+        //função que faz a soma do numero1 e numero2 e escreve no meu html
+        function soma(numero1, numero2){
+            return  document.write("<br>a soma é ",(numero1+numero2))
+        }
+ 
+        function areaDoQuadrado(numero1){
+            let multi = numero1**2
+            return  document.write("<br>A área é: ",multi)
         }
 
-        function calcular(){
-            var valorLado = parseFloat(document.getElementById("inputLado").value)
-
-            var areaQd = areaQuadrado(valorLado)
-
-            document.getElementById("resultado").innerText = areaQd
+        function Barney(){
+            return document.write("Barney é o meu heroi")
         }
 
-        
+        function dividir(n1,n2){
+            let div = n1/n2
+            document.getElementById("resultado").innerText = div
+        }
     </script>
 </body>
 </html>
